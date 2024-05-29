@@ -1,46 +1,90 @@
-.container {
-    display: flex;
+:root {
+    --boxes-width: 1000px;
+    --gap-boxes: 40px;
+    --box-width: calc(calc(var(--boxes-width) - calc(var(--gap-boxes) * 6)) / 3);
+    --list-width: 200px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
     background-color: black;
 }
 
+.container {
+    display: flex;
+    padding: 10vh;
+    justify-content: center;
+    align-items: top;
+}
+
+.div {
+    display: flex;
+    gap: 70px;
+}
 
 .list {
     list-style: none;
-    padding: 0;
     margin: 0;
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    width: var(--list-width);
+    height: fit-content;
+    padding: 10px;
+    gap: 10px;
 }
 
 .list li {
-    padding: 10px;
-    margin: 5px 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding: 15px;
+    width: calc(100% - 10px);
+    height: 45px;
     cursor: pointer;
+    flex-wrap: nowrap;
+}
+
+li img{
+    width: 40px;
+    position: absolute;
+    left: 15px;
+}
+
+.li-id {
+    width: fit-content;
+    white-space: nowrap;
+    text-align: center;
+    color: #959595;
+    font-size: 28px;
 }
 
 .text-boxes {
     display: flex;
+    width: var(--boxes-width);
     flex-wrap: wrap;
-    margin-left: 20px;
-    gap: 10px;
-}
-
-
-.text-box {
+    padding: 10px 0;
+    gap: 4px;
     position: relative;
-    width: auto;
-    height: auto;
-    margin: 50px auto;
-    padding: 20px;  
-    
-    border:3px solid transparent ;
-    border-radius:10px;
-    background-image:linear-gradient(#403950, #3E3356), linear-gradient(to bottom right,  #494358, #888297, #494358,#494358,#494358, #888297,#494358);
-    background-origin:border-box; 
-    background-clip:padding-box, border-box;
-   
-}
+  }
+  
+  .text-box {
+    position: absolute;
+    width: var(--box-width);
+    height: fit-content;
+    padding: 20px;
+    padding-bottom: 50px;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#403950, #3E3356), linear-gradient(to bottom right, #494358, #888297, #494358, #494358, #494358, #888297, #494358);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+  
 
-.icon{
+.icon {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -49,37 +93,50 @@
 
 .row {
     display: flex;
-    
+
     align-items: center;
     justify-content: left;
     margin-bottom: 20px;
-    /* 각 행 사이의 간격을 조절합니다 */
 }
 
 .title,
 .name,
-.text {
+.text,
+.date {
     padding: 5px;
     color: #fff;
 }
 
 .title {
+    width: 90%;
     font-weight: bold;
+    font-size: 20px;
 }
 
-.name {}
+.name {
+    font-size: 15px;
+}
 
 .text {
     height: 100%;
     word-wrap: break-word;
-    /* 텍스트가 너무 길어서 텍스트 박스를 벗어나지 않도록 처리합니다 */
+    color: #CECCD4;
+    font-size: 14px;
+}
+.date{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 15px;
+    color: #9E99AA;
+}
+.li {
+    border: 3px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, #4F4F4F, #414141), linear-gradient(to bottom right, #565656, #565656, #a0a0a0, #565656, #656565);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    color: #979797;
+    gap: var(--gap-boxes);
 }
 
-.li{
-    border:3px solid transparent ;
-    border-radius:10px;
-    background-image:linear-gradient(to bottom right, #4F4F4F, #414141), linear-gradient(to bottom right,  #565656, #565656, #a0a0a0,#565656, #656565);
-    background-origin:border-box; 
-    background-clip:padding-box, border-box;
-    color: #979797;
-}
