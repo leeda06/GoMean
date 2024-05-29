@@ -35,6 +35,14 @@ const App = () => {
         ],
         'Item 6': [
             { id: 16, name: 'Name 6.1', title: 'Title 6.1', content: 'Text 6.1' },
+            { id: 17, name: 'Name 6.2', title: 'Title 6.2', content: 'Text 6.2' },,
+            { id: 17, name: 'Name 6.2', title: 'Title 6.2', content: 'Text 6.2' },,
+            { id: 17, name: 'Name 6.2', title: 'Title 6.2', content: 'Text 6.2' },,
+            { id: 17, name: 'Name 6.2', title: 'Title 6.2', content: 'Text 6.2' },,
+            { id: 17, name: 'Name 6.2', title: 'Title 6.2', content: 'Text 6.2' },,
+            { id: 17, name: 'Name 6.2', title: 'Title 6.2', content: 'Text 6.2' },,
+            { id: 17, name: 'Name 6.2', title: 'Title 6.2', content: 'Text 6.2' },,
+            { id: 17, name: 'Name 6.2', title: 'Title 6.2', content: 'Text 6.2' },,
             { id: 17, name: 'Name 6.2', title: 'Title 6.2', content: 'Text 6.2' },
             { id: 18, name: 'Name 6.3', title: 'Title 6.3', content: 'Text 6.3Text 6.3Text 6.3' }
         ],
@@ -44,7 +52,7 @@ const App = () => {
         <div className="container">
             <ul className="list">
                 {items.map(item => (
-                    <li key={item} onClick={() => setSelected(item)}>
+                    <li className='li' key={item} onClick={() => setSelected(item)}>
                         {item}
                     </li>
                 ))}

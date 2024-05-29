@@ -13,13 +13,8 @@
 
 .list li {
     padding: 10px;
-    background: #f0f0f0;
     margin: 5px 0;
     cursor: pointer;
-}
-
-.list li:hover {
-    background: #ccc;
 }
 
 .text-boxes {
@@ -39,7 +34,7 @@
     
     border:3px solid transparent ;
     border-radius:10px;
-    background-image:linear-gradient(#403950, #3E3356), linear-gradient(to bottom right,  #494358,#494358, #888297, #494358, #494358);
+    background-image:linear-gradient(#403950, #3E3356), linear-gradient(to bottom right,  #494358, #888297, #494358,#494358,#494358, #888297,#494358);
     background-origin:border-box; 
     background-clip:padding-box, border-box;
    
@@ -54,7 +49,9 @@
 
 .row {
     display: flex;
-    justify-content: space-between;
+    
+    align-items: center;
+    justify-content: left;
     margin-bottom: 20px;
     /* 각 행 사이의 간격을 조절합니다 */
 }
@@ -76,4 +73,13 @@
     height: 100%;
     word-wrap: break-word;
     /* 텍스트가 너무 길어서 텍스트 박스를 벗어나지 않도록 처리합니다 */
+}
+
+.li{
+    border:3px solid transparent ;
+    border-radius:10px;
+    background-image:linear-gradient(to bottom right, #4F4F4F, #414141), linear-gradient(to bottom right,  #565656, #565656, #a0a0a0,#565656, #656565);
+    background-origin:border-box; 
+    background-clip:padding-box, border-box;
+    color: #979797;
 }
