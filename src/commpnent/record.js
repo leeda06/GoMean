@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../css/recode.css';
+import img from '../img/image.png';
+
 import Sub_green_off from '../img/Substract_green_off.png';
 import Sub_yellow_off from '../img/Substract_yellow_off.png';
 import Sub_white_off from '../img/Substract_white_off.png';
@@ -60,6 +62,12 @@ const App = () => {
       { title: 'Name 6.2', name: 'Title 6.2', content: 'Text 6.2', date: "2024.07.07" },
       { title: 'Name 6.3', name: 'Title 6.3', content: 'Text 6.3', date: "2024.07.07" },
       { title: 'Name 5.2', name: 'Title 5.2', content: 'Text 5.2', date: "2024.07.07" },
+      { title: 'Name 5.3', name: 'Title 5.3', content: 'Text 5.3', date: "2024.07.07" },
+      { title: 'Name 6.3', name: 'Title 6.3', content: 'Text 6.3', date: "2024.07.07" },
+      { title: 'Name 5.2', name: 'Title 5.2', content: 'Text 5.2', date: "2024.07.07" },
+      { title: 'Name 5.3', name: 'Title 5.3', content: 'Text 5.3', date: "2024.07.07" },
+      { title: 'Name 6.3', name: 'Title 6.3', content: 'Text 6.3', date: "2024.07.07" },
+      { title: 'Name 5.2', name: 'Title 5.2', content: 'Text 5.2', date: "2024.07.07" },
       { title: 'Name 5.3', name: 'Title 5.3', content: 'Text 5.3', date: "2024.07.07" }
     ],
     '학업': [
@@ -113,7 +121,7 @@ const App = () => {
   };
 
   return (
-    <div className='main'>
+    <div className='main' style={{boxShadow:isModalOpen ? 'inset' : ''}}>
       <div className={`container ${isModalOpen ? 'modal-open' : ''}`}>
         <div className='div'>
           <ul className="list">
@@ -166,7 +174,7 @@ const App = () => {
             </div>
             <div className='answer'>
               <div className='respondent'>
-                <img className="img"></img>
+                <img className="img" src={img}></img>
                 <div className="name">곰곰이</div>
               </div>
               <div className="text">곰곰이가 말하는 답변</div>
