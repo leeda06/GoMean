@@ -5,10 +5,20 @@
     --list-width: 200px;
 }
 
+* {
+
+    padding: 0;
+    margin: 0;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
     background-color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 body::after {
@@ -126,18 +136,18 @@ li img {
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.12), inset 0px 0px 20px rgba(0, 0, 0, 0.1), inset 0px 0px 80px 40px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(25px);
     border-radius: 49px;
-    padding: 70px;
+    padding: 70px 0;
 }
 
 
 .modal-content {
     z-index: 1;
     overflow: hidden;
-    padding: 10% 9%;
+    padding: 0 10%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 40px;
 }
 
@@ -159,24 +169,23 @@ li img {
 }
 
 .modal-content .detail .title {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 .modal-content .detail .name {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .modal-content .detail .text {
-    font-size: 20px;
-    font-weight: 200;
+    font-size: 15px;
     line-height: 1.7;
 }
 
 .answer {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
 }
 
 .answer .respondent {
@@ -198,31 +207,109 @@ li img {
     border: 1px solid transparent;
 }
 
+input {
+    cursor: pointer;
+    background-color: #ffffff00;
+}
+
 .modal-content .answer .respondent .name,
 .modal-content .answer .text {
     color: #fff;
 }
 
 .modal-content .answer .name {
-    font-size: 24px;
+    font-size: 23px;
     font-weight: bold;
 }
 
 .modal-content .answer .text {
-    line-height: 30px; /* 원하는 값으로 조절 */
-    font-size: 20px;
+    line-height: 30px;
+    font-size: 15px;
 }
 
-.modal div {
-    background-image: linear-gradient(to bottom right, #FFFFFF50, #FFFFFF75), #fff;
-    border: 2px solid transparent;
+.modal-comment {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-.modal-comment button {
+.comment{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contents{
+    width: 90%;
+    text-align: left;
+}
+.exit {
     position: absolute;
     top: 40px;
     right: 40px;
 }
+
+.text-container {
+    width: 90%;
+    position: fixed;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 2fr 8fr;
+}
+
+.text-container>div {
+    display: flex;
+    align-items: flex-end;
+    /* 자식 요소를 아래 정렬 */
+}
+
+#nekname {
+    border: 0;
+    padding: 5px 10px;
+    height: 100%;
+    /* Adjust color as needed */
+}
+.text-container input::placeholder  {
+    color:white;
+}
+
+.text-container input:focus {
+    border: 0;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    gap: 10px;
+}
+
+.text-content input {
+    border: 0;
+    padding: 5px 10px;
+    width: 100%;
+    height: 100%;
+    /* Ensures input takes the full height */
+}
+
+.text-content .send {
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    background-color: #ffffff00;
+    margin: 5px 10px;
+    width: 70px;
+    height: 100%;
+    /* Ensures button takes the full height */
+}
+
+
 
 .purple {
     background-image: linear-gradient(to bottom right, #403950, #3E3356), linear-gradient(to bottom right, #494358, #888297, #494358, #494358, #494358, #888297, #494358);

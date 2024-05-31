@@ -33,31 +33,31 @@ const App = () => {
   };
   const textBoxes = {
     '건강': [
-       { title: '저녁으로 뭐먹지', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다 아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다돈까쓰, 치킨, 피자, 초밥 다 먹ㅇㄹㄹㅇㄹㅇㅇ고 싶다...', date: "2024.07.07" },
-       { title: '저녁으로 뭐먹지', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다...', date: "2024.07.07" },
-       { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다...', date: "2024.07.07" },
-       { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다 아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다돈까쓰, 치킨, 피자, 초밥 다 먹ㅇㄹㄹㅇㄹㅇㅇ고 싶다...', date: "2024.07.07" },
-       { title: '저녁으로 뭐먹지', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다 아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다돈까쓰, 치킨, 피자, 초밥 다 먹ㅇㄹㄹㅇㄹㅇㅇ고 싶다...', date: "2024.07.07" },
-       { title: '저녁으로 뭐먹지', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다...', date: "2024.07.07" }
+      { title: '저녁으로 뭐먹지', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다 아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다돈까쓰, 치킨, 피자, 초밥 다 먹ㅇㄹㄹㅇㄹㅇㅇ고 싶다...', date: "2024.07.07" },
+      { title: '저녁으로 뭐먹지', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다...', date: "2024.07.07" },
+      { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다...', date: "2024.07.07" },
+      { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다 아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다돈까쓰, 치킨, 피자, 초밥 다 먹ㅇㄹㄹㅇㄹㅇㅇ고 싶다...', date: "2024.07.07" },
+      { title: '저녁으로 뭐먹지', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다 아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다돈까쓰, 치킨, 피자, 초밥 다 먹ㅇㄹㄹㅇㄹㅇㅇ고 싶다...', date: "2024.07.07" },
+      { title: '저녁으로 뭐먹지', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다...', date: "2024.07.07" }
     ],
     '금전': [
-       { title: 'Name 2.1', name: 'Title 2.1', content: '정말정말 긴 고민 글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', date: "2024.07.07" },
-       { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
-       { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다...', date: "2024.07.07" },
-       { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
-       { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다 아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다돈까쓰, 치킨, 피자, 초밥 다 먹ㅇㄹㄹㅇㄹㅇㅇ고 싶다...', date: "2024.07.07" },
-       { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
-       { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다...', date: "2024.07.07" },
-       { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
-       { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다 아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다돈까쓰, 치킨, 피자, 초밥 다 먹ㅇㄹㄹㅇㄹㅇㅇ고 싶다...', date: "2024.07.07" },
-       { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
-       { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다...', date: "2024.07.07" },
-       { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
-       { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다 아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다돈까쓰, 치킨, 피자, 초밥 다 먹ㅇㄹㄹㅇㄹㅇㅇ고 싶다...', date: "2024.07.07" },
-       { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
-       { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다...', date: "2024.07.07" },
-       { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
-       { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다 아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다돈까쓰, 치킨, 피자, 초밥 다 먹ㅇㄹㄹㅇㄹㅇㅇ고 싶다...', date: "2024.07.07" }
+      { title: 'Name 2.1', name: 'Title 2.1', content: '정말정말 긴 고민 글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', date: "2024.07.07" },
+      { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
+      { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다...', date: "2024.07.07" },
+      { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
+      { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다 아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다돈까쓰, 치킨, 피자, 초밥 다 먹ㅇㄹㄹㅇㄹㅇㅇ고 싶다...', date: "2024.07.07" },
+      { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
+      { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다...', date: "2024.07.07" },
+      { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
+      { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다 아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다돈까쓰, 치킨, 피자, 초밥 다 먹ㅇㄹㄹㅇㄹㅇㅇ고 싶다...', date: "2024.07.07" },
+      { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
+      { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다...', date: "2024.07.07" },
+      { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
+      { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다 아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다돈까쓰, 치킨, 피자, 초밥 다 먹ㅇㄹㄹㅇㄹㅇㅇ고 싶다...', date: "2024.07.07" },
+      { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
+      { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다...', date: "2024.07.07" },
+      { title: '저녁으로 뭐먹지', name: 'Title 2.2', content: 'Text 2.2', date: "2024.07.07" },
+      { title: '정말정말 긴 고민제목글 아정말 오늘점심 맛있겠다 저녁도 짱 맛있겠는걸?', name: '김미림', content: '돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다 아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다아 저녁 뭐먹지돈까쓰, 치킨, 피자, 초밥 다 먹고 싶다돈까쓰, 치킨, 피자, 초밥 다 먹ㅇㄹㄹㅇㄹㅇㅇ고 싶다...', date: "2024.07.07" }
     ],
     '개인': [
       { title: 'Name 3.1', name: 'Title 3.1', content: 'Text 3.1', date: "2024.07.07" },
@@ -131,7 +131,7 @@ const App = () => {
   };
 
   return (
-    <div className='main' style={{boxShadow:isModalOpen ? 'inset' : ''}}>
+    <div className='main' style={{ boxShadow: isModalOpen ? 'inset' : '' }}>
       <div className={`container ${isModalOpen ? 'modal-open' : ''}`}>
         <div className='div'>
           <ul className="list">
@@ -177,22 +177,35 @@ const App = () => {
       {isModalOpen && selectedTextBox && (
         <div className="modal">
           <div className="modal-div modal-content">
-            <div className='detail'>
-              <div className="title">{selectedTextBox.title}</div>
-              <div className="name">{selectedTextBox.name}</div>
-              <div className="text">{selectedTextBox.content}</div>
-            </div>
-            <div className='answer'>
-              <div className='respondent'>
-                <img className="img" src={img}></img>
-                <div className="name">곰곰이</div>
+              <div className='detail'>
+                <div className="title">{selectedTextBox.title}</div>
+                <div className="name">{selectedTextBox.name}</div>
+                <div className="text">{selectedTextBox.content}</div>
               </div>
-              <div className="text">친구야, 걱정하지 마. 우리 모두 졸업 후에 똑같은 고민을 했을 거야. 사실 아무도 완벽한 선택을 한 사람은 없어. 먼저 자신의 강점을 파악해봐. 경제학 전공으로 어떤 분야에 관심이 있는지, 어떤 경험을 쌓았는지를 고려해보면 도움이 될 거야. 내 이력서 나 자기소개서 작성하는 것은 귀찮긴 하지만, 이건 너 자신을 어필하는 좋은 기회야. 자신을 어떻게 표현할지 고민 중인데, 너의 열정과 노력, 그리고 적극적인 자세를 강조해보렴</div>
+              <div className='answer'>
+                <div className='respondent'>
+                  <img className="img" src={img}></img>
+                  <div className="name">곰곰이</div>
+                </div>
+                <div className="text">친구야, 걱정하지 마. 우리 모두 졸업 후에 똑같은 고민을 했을 거야. 사실 아무도 완벽한 선택을 한 사람은 없어. 먼저 자신의 강점을 파악해봐. 경제학 전공으로 어떤 분야에 관심이 있는지, 어떤 경험을 쌓았는지를 고려해보면 도움이 될 거야. 내 이력서 나 자기소개서 작성하는 것은 귀찮긴 하지만, 이건 너 자신을 어필하는 좋은 기회야. 자신을 어떻게 표현할지 고민 중인데, 너의 열정과 노력, 그리고 적극적인 자세를 강조해보렴</div>
+              </div>
+            </div>
+            <div className='modal-div modal-comment'>
+            <div className='comment'>
+              <div className='contents'>ewewew</div>
+              <div className='text-container'>
+                <div className='text-content'>
+                  <input type="text" id="nekname" name="nekname" placeholder='닉네임' required />
+                </div>
+                <div className='text-content'>
+                  <input type="text" id="content" name="content" placeholder="댓글로 응원의 메시지를 남겨보세요!" required />
+                  <button className='send'>보내기</button>
+                </div>
+              </div>
+              <button className='exit' onClick={closeModal}>Close</button>
             </div>
           </div>
-          <div className='modal-div modal-comment'>
-            <button onClick={closeModal}>Close</button>
-          </div>
+
         </div>
       )}
     </div>
