@@ -129,6 +129,19 @@ const App = () => {
     setIsModalOpen(false);
     setSelectedTextBox(null);
   };
+  const chatMessages = [
+    {
+      name: 'John',
+      time: '23:09',
+      content: 'Hello there!'
+    },
+    {
+      name: 'Alice',
+      time: '23:10',
+      content: 'Hi John!'
+    },
+    // Additional messages can be added here
+  ];
 
   return (
     <div className='main' style={{ boxShadow: isModalOpen ? 'inset' : '' }}>
@@ -177,22 +190,29 @@ const App = () => {
       {isModalOpen && selectedTextBox && (
         <div className="modal">
           <div className="modal-div modal-content">
-              <div className='detail'>
-                <div className="title">{selectedTextBox.title}</div>
-                <div className="name">{selectedTextBox.name}</div>
-                <div className="text">{selectedTextBox.content}</div>
-              </div>
-              <div className='answer'>
-                <div className='respondent'>
-                  <img className="img" src={img}></img>
-                  <div className="name">곰곰이</div>
-                </div>
-                <div className="text">친구야, 걱정하지 마. 우리 모두 졸업 후에 똑같은 고민을 했을 거야. 사실 아무도 완벽한 선택을 한 사람은 없어. 먼저 자신의 강점을 파악해봐. 경제학 전공으로 어떤 분야에 관심이 있는지, 어떤 경험을 쌓았는지를 고려해보면 도움이 될 거야. 내 이력서 나 자기소개서 작성하는 것은 귀찮긴 하지만, 이건 너 자신을 어필하는 좋은 기회야. 자신을 어떻게 표현할지 고민 중인데, 너의 열정과 노력, 그리고 적극적인 자세를 강조해보렴</div>
-              </div>
+            <div className='detail'>
+              <div className="title">{selectedTextBox.title}</div>
+              <div className="name">{selectedTextBox.name}</div>
+              <div className="text">{selectedTextBox.content}</div>
             </div>
-            <div className='modal-div modal-comment'>
+            <div className='answer'>
+              <div className='respondent'>
+                <img className="img" src={img}></img>
+                <div className="name">곰곰이</div>
+              </div>
+              <div className="text">친구야, 걱정하지 마. 우리 모두 졸업 후에 똑같은 고민을 했을 거야. 사실 아무도 완벽한 선택을 한 사람은 없어. 먼저 자신의 강점을 파악해봐. 경제학 전공으로 어떤 분야에 관심이 있는지, 어떤 경험을 쌓았는지를 고려해보면 도움이 될 거야. 내 이력서 나 자기소개서 작성하는 것은 귀찮긴 하지만, 이건 너 자신을 어필하는 좋은 기회야. 자신을 어떻게 표현할지 고민 중인데, 너의 열정과 노력, 그리고 적극적인 자세를 강조해보렴</div>
+            </div>
+          </div>
+          <div className='modal-div modal-comment'>
             <div className='comment'>
-              <div className='contents'>ewewew</div>
+              <div className='contents'>
+                {chatMessages.map((message, index) => (
+                  <div className='chat' key={index}>
+                    <div className='name'>{message.name}<div className='date'>{message.time}</div></div>
+                    <div className='content'>{message.content}</div>
+                  </div>
+                ))}
+              </div>
               <div className='text-container'>
                 <div className='text-content'>
                   <input type="text" id="nekname" name="nekname" placeholder='닉네임' required />
@@ -202,12 +222,12 @@ const App = () => {
                   <button className='send'>보내기</button>
                 </div>
               </div>
-              <button className='exit' onClick={closeModal}>Close</button>
             </div>
+            <button className='exit' onClick={closeModal}>Close</button>
           </div>
-
         </div>
       )}
+
     </div>
   );
 };
