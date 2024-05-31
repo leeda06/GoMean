@@ -1,27 +1,26 @@
-.rectangle-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px; /* 선택된 텍스트 주변에 여백을 추가합니다. */
-  }
-  
-  .rectangle {
-    background-color: #3498db; /* 직사각형의 배경색 */
-    color: white; /* 텍스트 색상 */
-    padding: 10px; /* 내부 여백 */
-    margin: 10px; /* 외부 여백 */
-  }
-  
-  .navigation {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .text {
-    margin: 0 10px; /* 텍스트 간격 */
-    cursor: pointer; /* 포인터로 마우스를 올렸을 때 클릭 가능한 커서가 표시됩니다. */
-  }
-  
-  .selected-text {
-    font-weight: bold; /* 선택된 텍스트를 진하게 표시합니다. */
-  }
-  
+.container {
+  width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 2px solid #000;
+}
+
+.full-width {
+  width: 100%;
+  border: 2px solid blue;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.fit-content {
+  width: fit-content;
+  max-width: 300px;
+  border: 2px solid red;
+  padding: 10px;
+}
+
+.content {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-top: 10px;
+}
