@@ -10,7 +10,7 @@ import Sub_purple_off from '../img/Substract_purple_off.png';
 import Sub_blue_off from '../img/Substract_blue_off.png';
 
 import Sub_green from '../img/Substract_green.png';
-import Sub_yellow from '../img/Substract_yellow.png';
+import Sub_yellow from '../img/Substract_yelSubstract_blue_offlow.png';
 import Sub_white from '../img/Substract_white.png';
 import Sub_pink from '../img/Substract_pink.png';
 import Sub_purple from '../img/Substract_purple.png';
@@ -85,8 +85,11 @@ const textBoxes = {
 };
 
 const App = () => {
+  // 데이터 기본값
   const [selected, setSelected] = useState({ category: '건강', color: 'green' });
+  // 창 띄워져 있는지 확인
   const [isModalOpen, setIsModalOpen] = useState(false);
+  // 질문 값 받기
   const [selectedTextBox, setSelectedTextBox] = useState(null);
   const textBoxesRef = useRef([]);
   const containerRef = useRef(null);
@@ -99,6 +102,7 @@ const App = () => {
     textBoxesRef.current = [];
   }, [selected]);
 
+  // 질문 테마 리스트
   const positionTextBoxes = () => {
     const boxes = textBoxesRef.current.filter(Boolean);
     const container = containerRef.current;
@@ -157,6 +161,7 @@ const App = () => {
     });
   };
 
+  // 답변 ( 댓글 ) 함수
   const renderTextBoxes = () => {
     return selected.category && textBoxes[selected.category].map(({ id, name, title, content, date }, index) => (
       <div
