@@ -10,7 +10,7 @@ import Sub_purple_off from '../img/Substract_purple_off.png';
 import Sub_blue_off from '../img/Substract_blue_off.png';
 
 import Sub_green from '../img/Substract_green.png';
-import Sub_yellow from '../img/Substract_yelSubstract_blue_offlow.png';
+import Sub_yellow from '../img/Substract_yellow.png';
 import Sub_white from '../img/Substract_white.png';
 import Sub_pink from '../img/Substract_pink.png';
 import Sub_purple from '../img/Substract_purple.png';
