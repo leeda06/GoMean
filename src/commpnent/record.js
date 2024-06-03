@@ -181,6 +181,15 @@ const App = () => {
 
   const chatMessages = [
     { name: 'John', time: '23:09', content: 'Hello there!' },
+    { name: 'Alice', time: '23:10', content: 'Hi John!' },
+    { name: 'Alice', time: '23:10', content: 'Hi John!' },
+    { name: 'Alice', time: '23:10', content: 'Hi John!' },
+    { name: 'Alice', time: '23:10', content: 'Hi John!' },
+    { name: 'Alice', time: '23:10', content: 'Hi John!' },
+    { name: 'Alice', time: '23:10', content: 'Hi John!' },
+    { name: 'Alice', time: '23:10', content: 'Hi John!' },
+    { name: 'Alice', time: '23:10', content: 'Hi John!' },
+    { name: 'Alice', time: '23:10', content: 'Hi John!' },
     { name: 'Alice', time: '23:10', content: 'Hi John!' }
   ];
 
@@ -188,9 +197,9 @@ const App = () => {
     <div className='main' style={{ boxShadow: isModalOpen ? 'inset' : '' }}>
       <div className={`container ${isModalOpen ? 'modal-open' : ''}`}>
         <div className='div'>
-          <ul className="list">
-            {renderCategories()}
-          </ul>
+            <ul className="list">
+              {renderCategories()}
+            </ul>
           <div className="text-boxes" ref={containerRef}>
             {renderTextBoxes()}
           </div>
