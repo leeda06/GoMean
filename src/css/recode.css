@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
 .div {
     display: flex;
     gap: 40px;
-    margin-left: calc(var(--list-width) + 50px);
+    margin-left: calc(var(--list-width));
     position: relative;
 }
 
@@ -46,7 +46,7 @@ body::-webkit-scrollbar {
     gap: 10px;
     z-index: 9999;
     position: fixed;
-    left: 22vh;
+    left: 15vw;
 }
 
 .list li {
