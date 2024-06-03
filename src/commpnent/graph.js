@@ -7,18 +7,17 @@ import Sub_white from '../img/Substract_white.png';
 import Sub_pink from '../img/Substract_pink.png';
 import Sub_purple from '../img/Substract_purple.png';
 import Sub_blue from '../img/Substract_blue.png';
+const legendItems = [
+  { category: '건강', color: '연두색', gif: Sub_green, className: 'green', values: 75 },
+  { category: '금전', color: '노랑색', gif: Sub_yellow, className: 'yellow', values: 20 },
+  { category: '개인', color: '흰색', gif: Sub_white, className: 'white', values: 19 },
+  { category: '인간관계', color: '분홍색', gif: Sub_pink, className: 'pink', values: 30 },
+  { category: '취업', color: '보라색', gif: Sub_purple, className: 'purple', values: 60 },
+  { category: '학업', color: '파란색', gif: Sub_blue, className: 'blue', values: 66 },
+];
+
 
 const BarGraph = ({ values }) => {
-  // Define the legend items
-  const legendItems = [
-    { category: '건강', color: '연두색', image: Sub_green, className: 'green' },
-    { category: '금전', color: '노랑색', image: Sub_yellow, className: 'yellow' },
-    { category: '개인', color: '흰색', image: Sub_white, className: 'white' },
-    { category: '인간관계', color: '분홍색', image: Sub_pink, className: 'pink' },
-    { category: '취업', color: '보라색', image: Sub_purple, className: 'purple' },
-    { category: '학업', color: '파란색', image: Sub_blue, className: 'blue' },
-  ];
-
   // Find the maximum value in the array
   const maxValue = Math.max(...values);
 
@@ -30,8 +29,8 @@ const BarGraph = ({ values }) => {
           <div key={index} className={`bar-item`}>
             {/* Bar */}
             <div className={`bar ${legendItems[index].className}`} style={{ height: `${(value / maxValue) * 50}vh` }}>
-              {/* Image */}
-              <img src={legendItems[index].image} alt={`Image ${index}`} style={{ bottom: `${(value / maxValue) * 51}vh` }} className="bar-image" />
+              {/* gif */}
+              <img src={legendItems[index].gif} alt={`Image ${index}`} style={{ bottom: `${(value / maxValue) * 52}vh` }} className="bar-image" />
             </div>
           </div>
         ))}
@@ -47,7 +46,8 @@ const BarGraph = ({ values }) => {
 };
 
 // Example usage
-const values = [80, 120, 60, 90, 150, 100]; // Example values for the bars
+// Example usage
+const values = legendItems.map(item => item.values); // Extracting values from legendItems
 
 const App = () => {
   return (
@@ -55,8 +55,7 @@ const App = () => {
       <div className="graph-container">
         <BarGraph values={values} />
       </div>
-      
-      
+
       <nav>
         <div className="Button-back">
           <button className="slide-btn Home-btn">홈</button>
@@ -67,5 +66,4 @@ const App = () => {
     </div>
   );
 };
-
 export default App;
