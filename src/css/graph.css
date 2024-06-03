@@ -62,44 +62,6 @@
     margin-right: 20px;
 }
 
-
-nav{
-    position: absolute;
-    left: calc(50% - 150px);
-    bottom: 120px;
-}
-
-.Button-back {
-    position: absolute;
-    width: 300px;
-    height: 50px;
-    margin-bottom: -1000px;
-    background-color: rgba(255, 255, 255, 0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-    padding: 10px;
-}
-
-.slide-btn {
-    border-radius: 40px;
-    height: 55px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-}
-
-.slide-btn:active {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
 .purple {
     background-image: linear-gradient(to bottom right, #403950, #3E3356), linear-gradient(to bottom right, #494358, #888297, #494358, #494358, #494358, #888297, #494358);
     color: #B092F6;

@@ -8,12 +8,12 @@ import Sub_pink from '../img/Substract_pink.png';
 import Sub_purple from '../img/Substract_purple.png';
 import Sub_blue from '../img/Substract_blue.png';
 const legendItems = [
-  { category: '건강', color: '연두색', gif: Sub_green, className: 'green', values: 75 },
-  { category: '금전', color: '노랑색', gif: Sub_yellow, className: 'yellow', values: 20 },
-  { category: '개인', color: '흰색', gif: Sub_white, className: 'white', values: 19 },
-  { category: '인간관계', color: '분홍색', gif: Sub_pink, className: 'pink', values: 30 },
-  { category: '취업', color: '보라색', gif: Sub_purple, className: 'purple', values: 60 },
-  { category: '학업', color: '파란색', gif: Sub_blue, className: 'blue', values: 66 },
+  { category: '건강', color: '연두색', gif: Sub_green, className: 'green', values: 80 },
+  { category: '금전', color: '노랑색', gif: Sub_yellow, className: 'yellow', values: 120 },
+  { category: '개인', color: '흰색', gif: Sub_white, className: 'white', values: 60 },
+  { category: '인간관계', color: '분홍색', gif: Sub_pink, className: 'pink', values: 90 },
+  { category: '취업', color: '보라색', gif: Sub_purple, className: 'purple', values: 150 },
+  { category: '학업', color: '파란색', gif: Sub_blue, className: 'blue', values: 100 },
 ];
 
 
@@ -55,14 +55,6 @@ const App = () => {
       <div className="graph-container">
         <BarGraph values={values} />
       </div>
-
-      <nav>
-        <div className="Button-back">
-          <button className="slide-btn Home-btn">홈</button>
-          <button className="slide-btn Trash-btn">쓰레기 보관함</button>
-          <button className="slide-btn Statistics-btn">통계</button>
-        </div>
-      </nav>
     </div>
   );
 };
