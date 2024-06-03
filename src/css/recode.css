@@ -228,9 +228,7 @@ input {
     font-weight: bold;
 }
 
-.modal-div{
-
-}
+.modal-div {}
 
 .modal-content .answer .text {
     line-height: 30px;
@@ -260,27 +258,42 @@ input {
     width: 80%;
     display: flex;
     height: 60vh;
-    height: 60vh;
     overflow-y: auto;
     flex-direction: column;
     align-items: flex-end;
     gap: 15px;
     scroll-behavior: smooth;
     flex-direction: column-reverse;
-    scrollbar-width: thin;
+    /* scrollbar-width: thin; */
 }
-.chat{
+
+.contents::-webkit-scrollbar {
+    width: 10px;
+}
+
+.contents::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to top, #767676, #B5B5B5);
+    border-radius: 10px;
+}
+
+.contents::-webkit-scrollbar-track {
+    background-color: #747474;
+    border-radius: 10px;
+}
+
+
+.chat {
     width: 100%;
     display: flex;
-    gap : 5px;
+    gap: 5px;
     flex-direction: column;
 }
 
-.chat > div{
+.chat>div {
     color: #fff;
 }
 
-.chat > .name{
+.chat>.name {
     font-weight: bold;
     display: flex;
     align-items: flex-end;
@@ -288,14 +301,19 @@ input {
     flex-direction: row;
 }
 
-.name > .date{
+.name>.date {
     font-weight: 200;
     font-size: 12px;
 }
+
 .exit {
     position: absolute;
     top: 40px;
     right: 40px;
+    background-color: #00000000;
+    border: 0;
+    color: white;
+    cursor: pointer;
 }
 
 .text-container {

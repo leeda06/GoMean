@@ -241,7 +241,7 @@ const App = () => {
                 </div>
               </div>
             </div>
-            <button className='exit' onClick={closeModal}>Close</button>
+            <button className='exit' onClick={closeModal}>X</button>
           </div>
         </div>
       )}
